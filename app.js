@@ -25,7 +25,14 @@ isCharAVowel('o');
 
 
 // 4. Define a function, as a function expression, `sumArray` that takes an array of numbers and returns the sum of those numbers. For example, `sumArray([2, 4, 5]);` would return `11`.
-
+const sumArray = function(numArr) {
+    let sum = 0;
+    numArr.forEach(function(val) {
+        sum += val;
+    });
+    return sum;
+};
+console.log(sumArray([2, 4, 5]));
 
 
 // 5. Define a function, as a function declaration, `multiplyArray` that takes an array of numbers and returns the product of those numbers. For example, `multiplyArray([2, 4, 5]);` would return `40`.
