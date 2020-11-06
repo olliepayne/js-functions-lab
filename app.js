@@ -9,11 +9,19 @@ const maxOfThree = function(...numbers) {
     return largestNumber;
 };
 console.log(maxOfThree(3, 20, 4));
-console.log(maxOfThree(3, 20, 57));
 
 
 // 3. Define a function, as a function declaration, `isCharAVowel` that takes a character as an argument and returns true if it is a vowel, false otherwise.
-
+function isCharAVowel(aChar) {
+    const vowels = ['a', 'e', 'i', 'o', 'u'];
+    vowels.forEach(function(val) {
+        if(aChar === val) {
+            console.log('true');
+            return true;
+        }
+    });
+}
+isCharAVowel('p');
 
 
 // 4. Define a function, as a function expression, `sumArray` that takes an array of numbers and returns the sum of those numbers. For example, `sumArray([2, 4, 5]);` would return `11`.
