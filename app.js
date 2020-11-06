@@ -8,7 +8,7 @@ const maxOfThree = function(...numbers) {
     });
     return largestNumber;
 };
-console.log(maxOfThree(3, 20, 4));
+console.log(`Answer 2: ${maxOfThree(3, 20, 4)}`);
 
 
 // 3. Define a function, as a function declaration, `isCharAVowel` that takes a character as an argument and returns true if it is a vowel, false otherwise.
@@ -16,7 +16,7 @@ function isCharAVowel(aChar) {
     const vowels = ['a', 'e', 'i', 'o', 'u'];
     vowels.forEach(function(val) {
         if(aChar === val) {
-            console.log('true');
+            console.log(`Answer 3: true`);
             return true;
         }
     });
@@ -32,11 +32,18 @@ const sumArray = function(numArr) {
     });
     return sum;
 };
-console.log(sumArray([2, 4, 5]));
+console.log(`Answer 4: ${sumArray([2, 4, 5])}`);
 
 
 // 5. Define a function, as a function declaration, `multiplyArray` that takes an array of numbers and returns the product of those numbers. For example, `multiplyArray([2, 4, 5]);` would return `40`.
-
+function multiplyArray(numArr) {
+    let product = 1;
+    numArr.forEach(function(val) {
+        product *= val;
+    });
+    return product;
+}
+console.log(`Answer 5: ${multiplyArray([2, 4, 5])}`);
 
 
 // 6. Define a function, as a function expression, `numArgs` that returns the number of arguments passed to the function when called.
